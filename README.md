@@ -13,18 +13,23 @@ The Personal Library Manager is a command-line interface (CLI) application that 
 - **Save and Load Library**: The application automatically loads the library from a file on startup and saves any changes to the file before exiting.
 
 ## Installation
-1. Clone the repository: 
+1. Clone the repository to your local machine:
+
     ```bash
     git clone https://github.com/hadeel04/summary.git
     ```
-2.Navigate to the project directory:
+
+2. Navigate to the project directory:
+
     ```bash
     cd personal-library-manager
     ```
-3.Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+
+3. Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Usage
  Run the application using the following command:
