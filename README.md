@@ -14,19 +14,28 @@ The Personal Library Manager is a command-line interface (CLI) application that 
 
 ## Installation
 
-1. Clone the repository:
-
-2. Ensure you have Python installed on your system.
+1. Clone the repository: 
+   ```bash
+   git clone https://github.com/hadeel04/summary.git
+   ```
+2.Navigate to the project directory:
+  ```bash
+   git clone https://github.com/hadeel04/summary.git
+   ```
+3.Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
-
-1. Navigate to the project directory:
-
-2. Run the application using the following command:
+ Run the application using the following command:
    
+   ```bash
+python main.py --file /path/to/custom_library.json
+```
 The `--file` option allows you to specify the path to the library file. If not provided, the default file `library.json` will be used in the current directory.
 
-3. Follow the on-screen menu options to interact with the Personal Library Manager.
+Follow the on-screen prompts to perform various operations on your library.
 
 ## Contributing
 
