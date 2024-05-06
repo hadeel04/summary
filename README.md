@@ -13,7 +13,6 @@ The Personal Library Manager is a command-line interface (CLI) application that 
 - **Save and Load Library**: The application automatically loads the library from a file on startup and saves any changes to the file before exiting.
 
 ## Installation
-
 1. Clone the repository: 
    ```bash
    git clone https://github.com/hadeel04/summary.git
