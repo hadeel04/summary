@@ -18,9 +18,9 @@ The Personal Library Manager is a command-line interface (CLI) application that 
    git clone https://github.com/hadeel04/summary.git
    ```
 2.Navigate to the project directory:
-  ```bash
-   git clone https://github.com/hadeel04/summary.git
-   ```
+   ```bash
+    cd personal-library-manager
+    ```
 3.Install dependencies:
    ```bash
    pip install -r requirements.txt
