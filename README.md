@@ -12,6 +12,12 @@ The Personal Library Manager is a command-line interface (CLI) application that 
 - **Sort Books**: Sort the list of books based on title, author, publication year, or genre.
 - **Save and Load Library**: The application automatically loads the library from a file on startup and saves any changes to the file before exiting.
 
+## Prerequisites
+
+Before running the application, ensure you have the following installed:
+
+- Python 3.x
+
 ## Installation
 1. Clone the repository to your local machine:
 
