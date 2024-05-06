@@ -3,12 +3,28 @@
         "title": "python",
         "author": "ahmad",
         "year": 2005,
-        "genre": "info"
+        "genre": "info",
+        "rating": 4
     },
     {
         "title": "java",
         "author": "hadeel",
         "year": 2000,
-        "genre": "info"
+        "genre": "info",
+        "rating": null
+    },
+    {
+        "title": "c",
+        "author": "hadeel",
+        "year": 1999,
+        "genre": "info",
+        "rating": null
+    },
+    {
+        "title": "c++",
+        "author": "ahmad",
+        "year": 1989,
+        "genre": "info",
+        "rating": null
     }
 ]

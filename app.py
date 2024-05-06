@@ -2,12 +2,11 @@ from book import Book
 from library import Library
 import argparse
 
-
 def main():
     # Create the argument parser
     parser = argparse.ArgumentParser(description='Personal Library Manager')
-    parser.add_argument('--file', type=str, default='library.json', help='Path to the library file (default: '
-                                                                         'library.json)')
+    parser.add_argument('--file', type=str, default='library.json',
+                        help='Path to the library file (default: ''library.json)')
 
     # Parse the command-line arguments
     args = parser.parse_args()
@@ -21,7 +20,8 @@ def main():
         print("3. Edit Book")
         print("4. Delete Book")
         print("5. Search Books")
-        print("6. Exit")
+        print("6. Sort Books")
+        print("7. Exit")
         choice = input("Enter your choice: ")
 
         if choice == "1":
@@ -77,6 +77,13 @@ def main():
                     print(book)
 
         elif choice == "6":
+            sort_key = input("Enter sorting key (title, author, year, genre): ")
+            sorted_books = library.sort_books(sort_key.lower())
+            print("Sorted books:")
+            for book in sorted_books:
+                print(book)
+
+        elif choice == "7":
             break
 
         else:
