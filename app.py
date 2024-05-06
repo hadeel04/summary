@@ -21,8 +21,9 @@ def main():
         print("4. Delete Book")
         print("5. Search Books")
         print("6. Sort Books")
-        print("7. Exit")
-        choice = input("Enter your choice: ")
+        print("7. Display All Books")
+        print("8. Exit")
+        choice = input("\nEnter your choice: ")
 
         if choice == "1":
             title = input("Enter book title: ")
@@ -39,7 +40,7 @@ def main():
             genre = input("Enter book genre: ")
             book = Book(title, author, year, genre)
             library.add_book(book)
-            print("Book added successfully!")
+            print("\nBook added successfully!")
 
         elif choice == "2":
             author = input("Enter author (or leave blank for all): ")
@@ -49,7 +50,7 @@ def main():
         elif choice == "3":
             title = input("Enter book title to edit: ")
             if not title.strip():
-                print("Book title cannot be empty.")
+                print("\nBook title cannot be empty.")
                 continue
             new_title = input("Enter new title (or leave blank): ")
             new_author = input("Enter new author (or leave blank): ")
@@ -62,7 +63,7 @@ def main():
         elif choice == "4":
             title = input("Enter book title to delete: ")
             if not title.strip():
-                print("Book title cannot be empty.")
+                print("\nBook title cannot be empty.")
                 continue
             library.delete_book(title)
 
@@ -70,24 +71,33 @@ def main():
             query = input("Enter search query , a title of  book or a name of author: ")
             results = library.search_books(query)
             if not results:
-                print("No books found matching the search .")
+                print("\nNo books found matching the search .")
             else:
-                print("Search results:")
+                print("\nSearch results:")
                 for book in results:
                     print(book)
 
         elif choice == "6":
             sort_key = input("Enter sorting key (title, author, year, genre): ")
             sorted_books = library.sort_books(sort_key.lower())
-            print("Sorted books:")
+            print("\nSorted books:")
             for book in sorted_books:
                 print(book)
 
         elif choice == "7":
+            books = library.get_all_books()
+            if not books:
+                print("\nThe library is empty.")
+            else:
+                print("\nAll books in the library:")
+                for book in books:
+                    print(book)
+
+        elif choice == "8":
             break
 
         else:
-            print("Invalid choice. Try again.")
+            print("\nInvalid choice. Try again.")
 
 
 if __name__ == "__main__":

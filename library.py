@@ -25,7 +25,7 @@ class Library:
             if book.title == title:
                 book_found = True
                 if new_title is not None and new_title.strip() == "":
-                    print("Book title cannot be empty.")
+                    print("\nBook title cannot be empty.")
                 else:
                     if new_title is not None:
                         book.title = new_title
@@ -35,24 +35,24 @@ class Library:
                     try:
                         book.year = int(new_year)
                     except ValueError:
-                        print("Invalid year format. Please enter a valid integer.")
+                        print("\nInvalid year format. Please enter a valid integer.")
                         return
                 if new_genre is not None:
                     book.genre = new_genre
                 self.save()
-                print("Book updated successfully!")
+                print("\nBook updated successfully!")
                 return
         if not book_found:
-            print(f"No book found with the title '{title}'")
+            print(f"\nNo book found with the title '{title}'")
 
     def delete_book(self, title):
         for i, book in enumerate(self.books):
             if book.title == title:
                 del self.books[i]
                 self.save()
-                print("Book deleted successfully!")
+                print("\nBook deleted successfully!")
                 return
-        print(f"No book found with the title '{title}'")
+        print(f"\nNo book found with the title '{title}'")
 
     def search_books(self, query):
         results = []
@@ -72,6 +72,9 @@ class Library:
             return sorted(self.books, key=lambda book: book.genre.lower())
         else:
             return self.books
+
+    def get_all_books(self):
+        return self.books
 
     def save(self):
         with open(self.file_path, "w") as file:
