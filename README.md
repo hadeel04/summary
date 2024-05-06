@@ -14,11 +14,11 @@ The Personal Library Manager is a command-line interface (CLI) application that 
 
 ## Installation
 1. Clone the repository: 
-   ```bash
-   git clone https://github.com/hadeel04/summary.git
-   ```
+    ```bash
+    git clone https://github.com/hadeel04/summary.git
+    ```
 2.Navigate to the project directory:
-   ```bash
+    ```bash
     cd personal-library-manager
     ```
 3.Install dependencies:
