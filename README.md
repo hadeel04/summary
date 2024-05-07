@@ -10,6 +10,7 @@ The Personal Library Manager is a command-line interface (CLI) application that 
 - **Delete Book**: Remove a book entry from the library.
 - **Search Books**: Search for books by title or author using a query string.
 - **Sort Books**: Sort the list of books based on title, author, publication year, or genre.
+- **Display All Books**: Display all the books in the library.
 - **Save and Load Library**: The application automatically loads the library from a file on startup and saves any changes to the file before exiting.
 
 ## Prerequisites
